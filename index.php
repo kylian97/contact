@@ -24,7 +24,7 @@ if(!empty($_POST["send"])) {
 	$subject = $_POST["subject"];
 	$message = $_POST["message"];
 
-	$toEmail = "VotreAdresse@gmail.com";
+	$toEmail = "kylian.bellegarde@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $message, $mailHeaders)) {
 	    $mail_msg = "Vos informations de contact ont été reçues avec succés.";
